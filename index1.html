@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orbit Councel | Home</title>
+  <link rel="icon" type="image/x-icon" href="assets/logo2.png" />
+
+  <!-- Core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+ 
+<link href="style.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .carousel-item {
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      /* transition: transform 2s ease-in-out; */
+      animation: zoomInOut 12s ease-in-out infinite;
+    }
+
+    @keyframes zoomInOut {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .carousel-caption {
+      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .card-box, .course-card, .country-card {
+      transition: all 0.3s ease;
+    }
+    .card-box:hover, .course-card:hover, .country-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .section-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+    }
+
+    .circle {
+      background-color: #007BFF;
+      color: white;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .line {
+      height: 3px;
+      background-color: #007BFF;
+      width: 30px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Hero Section -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" style="background-image:url('assets/h1.webp');">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="display-4 fw-bold" data-aos="fade-down">Welcome to Orbit Councel</h1>
+          <p class="lead" data-aos="fade-up" data-aos-delay="200">Your trusted global education partner</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image:url('assets/h2.jpg');">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="display-4 fw-bold" data-aos="fade-left">Study Abroad</h1>
+          <p class="lead" data-aos="fade-right" data-aos-delay="200">We guide you every step of the way</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image:url('assets/h7.jpg');">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="display-4 fw-bold" data-aos="zoom-in">Achieve Your Dreams</h1>
+          <p class="lead" data-aos="fade-up" data-aos-delay="200">Expert advisors, worldwide universities</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+<!-- Expert Advice Section -->
+<section class="section py-5 bg-light">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="section-title">We provide our Experts to Generate Great Visa</h2>
+    <p class="mb-5">
+      We offer study abroad programs in more than 40 countries. Our global education services align with your career and personal goals.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-box text-center p-4 shadow rounded-4 bg-white">
+          <div class="img-container mb-3">
+            <img src="assets/consult1" class="img-fluid rounded" alt="Admission Application" />
+          </div>
+          <h4 class="fw-bold">Admission Application</h4>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-box text-center p-4 shadow rounded-4 bg-white">
+          <div class="img-container mb-3">
+            <img src="assets/consult2.jfif" class="img-fluid rounded" alt="Assessment & Advice" />
+          </div>
+          <h4 class="fw-bold">Assessment & Advice</h4>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-box text-center p-4 shadow rounded-4 bg-white">
+          <div style="height: 300px;" class="img-container mb-3">
+            <img src="assets/consult3.jfif" class="img-fluid rounded" alt="Interview Preparation" />
+          </div>
+          <h4 class="fw-bold">Interview Preparation</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Courses Section -->
+<section class="course-section py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Explore Our Courses</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- IELTS Card -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="course-card h-100 text-center p-4 shadow rounded-4 bg-white">
+          <div class="icon-wrap mb-3 fs-1 text-primary">
+            <i class="bi bi-globe"></i>
+          </div>
+          <h5 class="fw-bold">IELTS Preparation</h5>
+          <p>Improve your skills to ace IELTS confidently in all four components.</p>
+        </div>
+      </div>
+
+      <!-- SAT Card -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="course-card h-100 text-center p-4 shadow rounded-4 bg-white">
+          <div class="icon-wrap mb-3 fs-1 text-success">
+            <i class="bi bi-pencil-square"></i>
+          </div>
+          <h5 class="fw-bold">SAT Preparation</h5>
+          <p>Boost your math, reading, and writing scores with expert strategies.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Study Abroad Section -->
+<section class="study-abroad py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5" data-aos="fade-up">Study Abroad – Choose your country!</h2>
+
+    <div class="row g-4 justify-content-center">
+      <!-- UK -->
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="country-card p-3 shadow rounded-4 text-center bg-white">
+          <div class="image-container mb-3">
+            <img style="height: 250px;" src="assets/uk.jfif" alt="United Kingdom" class="img-fluid rounded" />
+          </div>
+          <h4 class="fw-bold">United Kingdom</h4>
+          <p>Our expert team ensures your success in the UK.</p>
+          <a href="UK.html" class="btn btn-outline-primary mt-2">Read More</a>
+        </div>
+      </div>
+
+      <!-- Australia -->
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="country-card p-3 shadow rounded-4 text-center bg-white">
+          <div class="image-container mb-3">
+            <img style="height: 250px;" src="assets/australia.jfif" alt="Australia" class="img-fluid rounded" />
+          </div>
+          <h4 class="fw-bold">Australia</h4>
+          <p>Explore our programs and scholarships in Australia.</p>
+          <a href="australia.html" class="btn btn-outline-primary mt-2">Read More</a>
+        </div>
+      </div>
+
+      <!-- USA -->
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="country-card p-3 shadow rounded-4 text-center bg-white">
+          <div class="image-container mb-3">
+            <img style="height: 250px;" src="assets/usa.jfif" alt="USA" class="img-fluid rounded" />
+          </div>
+          <h4 class="fw-bold">United States</h4>
+          <p>Discover unique study options in the USA.</p>
+          <a href="USA.html" class="btn btn-outline-primary mt-2">Read More</a>
+        </div>
+      </div>
+
+      <!-- Canada -->
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+        <div class="country-card p-3 shadow rounded-4 text-center bg-white">
+          <div class="image-container mb-3">
+            <img style="height: 250px;" src="assets/canada.jfif" alt="Canada" class="img-fluid rounded" />
+          </div>
+          <h4 class="fw-bold">Canada</h4>
+          <p>Find the best study programs and options for Canada.</p>
+          <a href="canada.html" class="btn btn-outline-primary mt-2">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Info Section -->
+<section class="contact-info py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5" data-aos="fade-up">Get In Touch</h2>
+    <div class="row justify-content-center">
+
+      <!-- Address -->
+      <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-delay="100">
+        <div class="p-4 rounded-4 shadow bg-white h-100">
+             <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.50387395537!2d73.15717237389633!3d31.455322650355985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392269002b6014ed%3A0x5adae6b1f61955e6!2sOrbit%20Counsels!5e0!3m2!1sen!2s!4v1752225868998!5m2!1sen!2s" target="_blank"></a>
+          <i class="bi bi-geo-alt-fill fs-2 text-primary mb-3"></i>
+           </a>
+          <h6 class="fw-bold">Near Bank Alfalah, Faisal Town, West Canal, Faisalabad, Pakistan</h6>
+          <p class="text-muted">Visit Our Office</p>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="p-4 rounded-4 shadow bg-white h-100">
+          <a href="https://wa.me/+923306667248" target="_blank">
+            <i class="bi bi-telephone-fill fs-2 text-success mb-3"></i>
+            </a>
+          <h5 class="fw-bold">+92 330 6667248</h5>
+          <p class="text-muted">Call Us Right Now!</p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-delay="300">
+        <div class="p-4 rounded-4 shadow bg-white h-100">
+          <a href="https://tr.ee/b7Z5hvHi8X" target="_blank">
+          <i class="bi bi-envelope-fill fs-2 text-danger mb-3"></i>
+          </a>
+          <h5 class="fw-bold">info@orbitcouncil.com
+          </h5>
+          <p class="text-muted">Send Us A Mail</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Process Steps Section -->
+<section class="process-section py-5 bg-light">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="fw-bold mb-5">ADMISSION AND FLY PROCESS STEPS</h2>
+    <div class="row justify-content-center align-items-center g-4">
+
+      <div class="col-6 col-md-2" data-aos="fade-up" data-aos-delay="100">
+        <div class="circle mx-auto">1</div>
+        <p>Explore Options</p>
+      </div>
+
+      <div class="col-6 col-md-2" data-aos="fade-up" data-aos-delay="200">
+        <div class="circle mx-auto">2</div>
+        <p>Select Category</p>
+      </div>
+
+      <div class="col-6 col-md-2" data-aos="fade-up" data-aos-delay="300">
+        <div class="circle mx-auto">3</div>
+        <p>Submit Documents</p>
+      </div>
+
+      <div class="col-6 col-md-2" data-aos="fade-up" data-aos-delay="400">
+        <div class="circle mx-auto">4</div>
+        <p>Fly Abroad</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<div id="footer"></div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: false
+  });
+</script>
+ <script src="java.js"></script>
+</body>
+</html>

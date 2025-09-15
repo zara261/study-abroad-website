@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Orbit Council_home</title>
+<link href="assets/logo2.png" rel="icon" type="image/x-icon"/>
+<script src="java.js"></script>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+<style> /* Smooth background zoom on slide change */
+  .carousel-item {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    transition: transform 2s ease-in-out;
+    animation: zoomInOut 12s ease-in-out infinite;
+  }
+
+  @keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  .carousel-caption {
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  /* Optional fade effect on carousel items */
+  .carousel-fade .carousel-item {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+  }
+
+  .carousel-fade .carousel-item.active {
+    opacity: 1;
+    z-index: 1;
+  }</style></head>
+<body>
+<!-- header start -->
+<div class="fade-in" id="header"></div>
+<!-- header end -->
+<!-- Hero Carousel start-->
+<div class="carousel slide carousel-fade fade-in" data-bs-interval="5000" data-bs-ride="carousel" id="heroCarousel">
+<div class="carousel-inner fade-in">
+<!-- Slide 1 -->
+<div class="carousel-item active fade-in" style="background-image: url(assets/4.jfif);">
+<div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 fade-in">
+<h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Welcome to Orbit Council</h1>
+<p class="lead animate__animated animate__fadeInUp animate__delay-1s">Your trusted global education partner</p>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="carousel-item fade-in" style="background-image: url(assets/6.jfif);">
+<div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 fade-in">
+<h1 class="display-4 fw-bold animate__animated animate__fadeInLeft">Study Abroad</h1>
+<p class="lead animate__animated animate__fadeInRight animate__delay-1s">We guide you every step of the way</p>
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="carousel-item fade-in" style="background-image: url(assets/7.jfif);">
+<div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 fade-in">
+<h1 class="display-4 fw-bold animate__animated animate__zoomIn">Achieve Your Dreams</h1>
+<p class="lead animate__animated animate__fadeInUp animate__delay-1s">Expert advisors, worldwide universities</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Controls -->
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#heroCarousel" type="button">
+<span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#heroCarousel" type="button">
+<span class="carousel-control-next-icon"></span>
+</button>
+<!-- Hero Carousel end-->
+<!-- expert advise start-->
+<section class="section py-5 fade-in">
+<div class="container text-center fade-in">
+<h2 class="fw-bold mb-4">
+<span>We provide our Experts<br/>
+      to Generate Great Visa</span>
+</h2>
+<p class="mb-5">
+      We offer a variety of study abroad programs in more than 40 countries around the world.
+      Study abroad provides a global education that’s tied to your career and personal goals,
+      and our programs help you build strong communication skills and leadership abilities
+      that you can use throughout your career.
+    </p>
+<div class="row g-4 justify-content-center fade-in">
+<!-- Card 1 -->
+<div class="col-md-4 fade-in">
+<div class="card-box text-center p-4 shadow rounded-4 fade-in">
+<div class="img-container mb-3 fade-in">
+<img alt="Admission Application" class="img-fluid rounded" src="assets/consult1"/>
+</div>
+<h4 class="fw-bold">Admission Application</h4>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="col-md-4 fade-in">
+<div class="card-box text-center p-4 shadow rounded-4 fade-in">
+<div class="img-container mb-3 fade-in">
+<img alt="Assessment &amp; Advise" class="img-fluid rounded" src="assets/consult2.jfif"/>
+</div>
+<h4 class="fw-bold">Assessment &amp; Advise</h4>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="col-md-4 fade-in">
+<div class="card-box text-center p-4 shadow rounded-4 fade-in">
+<div class="img-container mb-3 fade-in">
+<img alt="Interview Preparation" class="img-fluid rounded" src="assets/consult3.jfif" style="height: 310px; width: 400px;"/>
+</div>
+<h4 class="fw-bold">Interview Preparation</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- expert advise end-->
+<!-- courses section start -->
+<section class="course-section py-5 fade-in">
+<div class="container fade-in">
+<h2 class="text-center fw-bold mb-5">Explore Our Courses</h2>
+<div class="row g-4 justify-content-center fade-in">
+<!-- IELTS Card -->
+<div class="col-md-4 fade-in">
+<div class="course-card h-100 text-center p-4 shadow rounded-4 transition hover-shadow fade-in">
+<div class="icon-wrap mb-3 fs-1 text-primary fade-in">
+<i class="bi bi-globe"></i>
+</div>
+<h5 class="fw-bold">IELTS Preparation</h5>
+<p>Enhance your reading, writing, listening, and speaking skills to ace the IELTS exam confidently.</p>
+</div>
+</div>
+<!-- SAT Card -->
+<div class="col-md-4 fade-in">
+<div class="course-card h-100 text-center p-4 shadow rounded-4 transition hover-shadow fade-in">
+<div class="icon-wrap mb-3 fs-1 text-success fade-in">
+<i class="bi bi-pencil-square"></i>
+</div>
+<h5 class="fw-bold">SAT Preparation</h5>
+<p>Boost your math, evidence-based reading, and writing scores with proven strategies and practice.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- courses section end -->
+<!-- coose yoyr country start-->
+<section class="study-abroad py-5 fade-in">
+<div class="container text-center fade-in">
+<h1 class="fw-bold mb-5">Study Abroad – Choose your country!</h1>
+<div class="row g-4 justify-content-center fade-in">
+<!-- UK -->
+<div class="col-md-3 fade-in">
+<div class="country-card p-3 shadow rounded-4 text-center fade-in">
+<div class="image-container mb-3 fade-in">
+<img alt="United Kingdom" class="img-fluid rounded" src="assets/uk.jfif" style="height: 300px;"/>
+</div>
+<h4 class="fw-bold">United Kingdom</h4>
+<p>Our expert team ensures your success as a student in the UK.</p>
+<a class="btn btn-primary mt-2" href="UK.html">Read More</a>
+</div>
+</div>
+<!-- Australia -->
+<div class="col-md-3 fade-in">
+<div class="country-card p-3 shadow rounded-4 text-center fade-in">
+<div class="image-container mb-3 fade-in">
+<img alt="Australia" class="img-fluid rounded" src="assets/australia.jfif" style="height: 300px;"/>
+</div>
+<h4 class="fw-bold">Australia</h4>
+<p>Explore our semester programs and scholarships in Australia.</p>
+<a class="btn btn-primary mt-2" href="australia.html">Read More</a>
+</div>
+</div>
+<!-- USA -->
+<div class="col-md-3 fade-in">
+<div class="country-card p-3 shadow rounded-4 text-center fade-in">
+<div class="image-container mb-3 fade-in">
+<img alt="United States" class="img-fluid rounded" src="assets/usa.jfif" style="height: 300px;"/>
+</div>
+<h4 class="fw-bold">United States</h4>
+<p>Discover unique study abroad programs in the USA.</p>
+<a class="btn btn-primary mt-2" href="USA.html">Read More</a>
+</div>
+</div>
+<!-- Canada -->
+<div class="col-md-3 fade-in">
+<div class="country-card p-3 shadow rounded-4 text-center fade-in">
+<div class="image-container mb-3 fade-in">
+<img alt="Canada" class="img-fluid rounded" src="assets/canada.jfif" style="height: 300px;"/>
+</div>
+<h4 class="fw-bold">Canada</h4>
+<p>Find the best study programs and options for Canada.</p>
+<a class="btn btn-primary mt-2" href="canada.html">Read More</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- coose yoyr country end-->
+<!-- get in touch start-->
+<section class="contact-info py-5 fade-in">
+<div class="container text-center fade-in">
+<h2 class="fw-bold mb-5">Get In Touch</h2>
+<div class="row justify-content-center fade-in">
+<!-- Address -->
+<div class="col-md-4 mb-4 fade-in">
+<div class="box-shadow p-4 rounded fade-in" style="height: 250px;">
+<div class="icon-circle mb-3 fade-in">
+<i class="bi bi-geo-alt-fill"></i>
+</div>
+<h6 class="fw-bold">Near Bank Alfalah, Faisal Town, West Canal, Road, Faisalabad, 38000, Pakistan</h6>
+<p class="text-muted">Visit Our Office</p>
+</div>
+</div>
+<!-- Phone -->
+<div class="col-md-4 mb-4 fade-in">
+<div class="box-shadow p-4 rounded fade-in" style="height: 250px;">
+<div class="icon-circle mb-3 fade-in">
+<i class="bi bi-telephone-fill"></i>
+</div>
+<h5 class="fw-bold"> +92 330 6667248</h5>
+<p class="text-muted">Call Us Right Now!</p>
+</div>
+</div>
+<!-- Email -->
+<div class="col-md-4 mb-4 fade-in">
+<div class="box-shadow p-4 rounded fade-in" style="height: 250px;">
+<div class="icon-circle mb-3 fade-in">
+<i class="bi bi-envelope-fill"></i>
+</div>
+<h5 class="fw-bold">
+<a class="text-dark text-decoration-none" href="mailto:info@orbitcouncil.com"> info@orbitcounsels.com</a>
+</h5>
+<p class="text-muted">Send Us A Mail</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- get in touch end-->
+<!-- admission & fly process start -->
+<section class="process-section py-5 fade-in">
+<div class="container text-center fade-in">
+<h2 class="fw-bold mb-5">ADMISSION AND FLY PROCESS STEPS</h2>
+<div class="row justify-content-center align-items-center fade-in">
+<div class="col-6 col-md-2 step fade-in">
+<div class="circle fade-in">1</div>
+<p>Explore Options</p>
+</div>
+<div class="line d-none d-md-block fade-in"></div>
+<div class="col-6 col-md-2 step fade-in">
+<div class="circle fade-in">2</div>
+<p>Select the Category</p>
+</div>
+<div class="line d-none d-md-block fade-in"></div>
+<div class="col-6 col-md-2 step fade-in">
+<div class="circle fade-in">3</div>
+<p>Submit documents</p>
+</div>
+<div class="line d-none d-md-block fade-in"></div>
+<div class="col-6 col-md-2 step fade-in">
+<div class="circle fade-in">4</div>
+<p>Fly Abroad</p>
+</div>
+</div>
+</div>
+</section>
+<!-- admission & fly process end -->
+<!--footer start-->
+<div class="fade-in" id="footer"></div>
+<!--footer end-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
